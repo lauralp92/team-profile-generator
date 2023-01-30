@@ -5,7 +5,7 @@ const Employee = require("./lib/Employee");
 class Manager extends Employee {
   constructor(name, id, email, officeNumber) {
     super(name, id, email);
-    // office number is added here as it unique to intern
+    // office number is added here as it unique to manager
     this.officeNumber = officeNumber;
     this.role = "Manager";
   }
