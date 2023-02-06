@@ -69,7 +69,7 @@ function employeeMenu() {
       if (data.empType === "Engineer") {
         addEngData();
       } else {
-        if (data.empType === "Intern") addIntData();
+        if (data.empType === "Intern") return addIntData();
       }
 
       // questions for the user when adding engineer
