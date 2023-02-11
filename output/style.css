@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #170312;
+}
+
+.team-heading {
+  background-color: #33032f;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px;
+}
+
+.employee-card {
+  background-color: #97d8b2;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.card-body {
+  background-color: #a0acad;
+}
