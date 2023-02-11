@@ -33,7 +33,11 @@ function employeePrompt() {
         addIntData();
       } else {
         const html = render(teamArr);
-        fs.writeFile(outputPath, html);
+        fs.writeFile(outputPath, html, (err) => {
+          if (err) {
+            return console.log(err);
+          }
+        });
       }
     });
 }
@@ -60,7 +64,7 @@ function addManagerData() {
       {
         type: "input",
         message: "Please enter the team manager's office number:",
-        name: "officeNum",
+        name: "officeNumber",
       },
     ])
     .then((data) => {
@@ -68,7 +72,7 @@ function addManagerData() {
         data.managerName,
         data.managerID,
         data.managerEmail,
-        data.officeNum
+        data.officeNumber
       );
       teamArr.push(manager);
       employeePrompt();
@@ -108,7 +112,7 @@ function addEngData() {
         data.engEmail,
         data.engGitHub
       );
-      teamArr.push(Engineer);
+      teamArr.push(engineer);
       employeePrompt();
     });
 }
@@ -135,7 +139,7 @@ function addIntData() {
       {
         type: "input",
         message: "Please enter the intern's school/university:",
-        name: "engSch",
+        name: "intSch",
       },
     ])
     .then((data) => {
@@ -145,9 +149,13 @@ function addIntData() {
         data.intEmail,
         data.intSch
       );
-      teamArr.push(Intern);
+      teamArr.push(intern);
       employeePrompt();
     });
 }
 
-addManagerData();
+function init() {
+  addManagerData();
+}
+
+init();
