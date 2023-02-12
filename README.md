@@ -11,7 +11,6 @@ A Node.js command line application that prompts a user to input information abou
 ## Table of Contents
 
 - [Description](#description)
-- [Screenshot] (#screenshot)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
