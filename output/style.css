@@ -18,10 +18,17 @@ body {
 
 .employee-card {
   background-color: #97d8b2;
-  width: 50%;
-  border-radius: 10px;
+  text-align: center;
+  width: 60%;
+  border-radius: 50px;
+  border-bottom: 50px;
+  margin: 10px;
 }
 
 .card-body {
   background-color: #a0acad;
+}
+
+.list-group-item {
+  background-color: #97d8b2;
 }
